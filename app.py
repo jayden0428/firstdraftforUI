@@ -1,18 +1,4 @@
-import sys
-import importlib.util
-import streamlit as st
 
-st.write("실제 실행 중인 Python:", sys.version)
-st.write("Python 실행 위치:", sys.executable)
-
-for package in ["joblib", "sklearn", "rdkit", "numpy"]:
-    spec = importlib.util.find_spec(package)
-    st.write(
-        package,
-        "설치됨" if spec is not None else "찾을 수 없음"
-    )
-
-st.stop()  # 진단 정보를 확인하기 위해 여기서 잠시 중단
 from pathlib import Path
 
 import joblib
