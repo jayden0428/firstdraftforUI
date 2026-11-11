@@ -1,0 +1,7 @@
+streamlit
+rdkit==2026.9.1
+scikit-learn==1.6.1
+numpy==2.4.6
+pandas
+joblib
+Pillow
